@@ -1,27 +1,40 @@
-import { Container, styled, Typography } from "@mui/material";
+import { Box, Container, styled, Typography } from "@mui/material";
 import Avatar from "../../../../assets/images/avatar.jpeg";
 import Grid from "@mui/material/Grid";
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import EmailIcon from '@mui/icons-material/Email';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
+import AnimatedBackground from '../../../../components/AnimatedBackground/AnimatedBackground';
+import theme from "../../../../theme";
 
 function Hero() {
-  const StyledHero = styled("div")(({theme}) => ({
+  const StyledHero = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
     height: "100vh",
     display: "flex",
-    alignItems: "center"
+    alignItems: "center",
+    position: "relative", 
+    overflow: "hidden", 
+    zIndex: 2,
   }));
 
   const StyledImg = styled("img")(() => ({
-    width: "80%",
+    width: "100%",
     borderRadius: "50%",
-    border: "1px solid white"
+    border: "1px solid white",
+    position: "relative", 
+    zIndex: 1, 
+    [theme.breakpoints.up("md")]: {
+      width: "80%",
+    },
   }));
 
   return (
     <StyledHero>
       <Container maxWidth="lg">
+        <Box position="absolute" top={0} left={0} width="100%" height="{50%}" zIndex={-1}>
+          <AnimatedBackground />
+        </Box>
         <Grid container spacing={2}>
           <Grid item xs={12} md={5}>
             <StyledImg src={Avatar} alt="avatar" />
