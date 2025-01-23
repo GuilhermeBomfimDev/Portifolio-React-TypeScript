@@ -3,14 +3,18 @@ import { createTheme, responsiveFontSizes } from "@mui/material";
 let theme = createTheme({
     palette: {
         primary: {
-            main: "#232323",
+            main: "#180161",
         },
         secondary: {
-            main: "#4f8e3e",
+            main: "#E7F6F2",
         },
     },
     typography: {
-        fontFamily: "Helvetica Neue",
+        fontFamily: '"Segoe UI"',
+        h1: {
+            fontSize: "5rem",
+            fontWeight: 500,
+        },
     }
 });
 
