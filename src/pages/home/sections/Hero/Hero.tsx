@@ -16,6 +16,12 @@ function Hero() {
     position: "relative", 
     overflow: "hidden", 
     zIndex: 2,
+    [theme.breakpoints.up("md")]: {
+      
+    },
+    [theme.breakpoints.up("xs")]: {
+      paddingTop: "50px",
+    },
   }));
 
   const StyledImg = styled("img")(() => ({
@@ -44,14 +50,14 @@ function Hero() {
             <Typography color="secondary" variant="h2" textAlign="center" marginBottom="20px">I'm a FullStack Developer</Typography>
             <Grid container display="flex" justifyContent="center" spacing={2}>
               <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                <StyledButton>
+                <StyledButton onClick={() => console.log("Download CV")}>
                   <FileDownloadIcon/>
                   <Typography>Download CV</Typography>
                 </StyledButton>
               </Grid>
               <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                <StyledButton>
-                 <EmailIcon/>
+                <StyledButton onClick={() => console.log("contact")}>
+                  <EmailIcon/>
                   <Typography>Contact Me</Typography>
                 </StyledButton>
               </Grid>
