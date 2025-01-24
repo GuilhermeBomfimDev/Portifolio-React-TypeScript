@@ -1,7 +1,9 @@
+@use 'sass:math';
+
 @function boxShadow($n) {
-  $value: "#{random(2500)-500}px #{random(1500)-500}px #{random(5)}px #{$color}";
+  $value: "#{math.random(2500)-500}px #{math.random(1500)-500}px #{math.random(5)}px #{$color}";
   @for $i from 1 through $n {
-    $value: $value + ", #{random(2500)-500}px #{random(1500)-500}px #{random(5)}px #{$color}";
+    $value: $value + ", #{math.random(2500)-500}px #{math.random(1500)-500}px #{math.random(5)}px #{$color}";
   }
   @return unquote($value);
 }
