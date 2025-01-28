@@ -1,50 +1,98 @@
-# React + TypeScript + Vite
+# Portifolio-React-TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Sobre o Projeto
+Este projeto é o portfólio pessoal de Guilherme Bomfim, desenvolvido para exibir todas as experiências de projetos usando React e TypeScript, juntamente com SWC para compilação rápida.
 
-Currently, two official plugins are available:
+## 🌟 Funcionalidades Principais
+### Apresentação de Projetos:
+- Listagem de projetos pessoais e profissionais
+- Detalhes e descrições de cada projeto
+- Links para repositórios e demonstrações
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologias Utilizadas
+### Backend:
+- Não se aplica (Projeto Frontend)
 
-## Expanding the ESLint configuration
+### Frontend:
+- React
+- TypeScript
+- MUI (Material-UI)
+- SCSS
+- Vite (para desenvolvimento e build)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📂 Estrutura do Projeto
+```plaintext
+Portifolio-React-TypeScript/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   └── ...
+├── public/
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Descrição dos Principais Diretórios
+- **src/components**: Componentes React reutilizáveis.
+- **src/pages**: Páginas principais do portfólio.
+- **src/styles**: Estilos globais e específicos do projeto.
+- **public**: Arquivos estáticos públicos.
+  
+## 🖥️ Configuração e Execução
+### Pré-requisitos
+- Node.js 14.x ou superior
+- npm ou yarn
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Passo a Passo
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/GuilhermeBomfimDev/Portifolio-React-TypeScript.git
+   ```
+2. Navegue até a pasta do projeto:
+   ```sh
+   cd Portifolio-React-TypeScript
+   ```
+3. Instale as dependências:
+   ```sh
+   npm install
+   ```
+   ou
+   ```sh
+   yarn install
+   ```
+4. Inicie o projeto:
+   ```sh
+   npm run dev
+   ```
+   ou
+   ```sh
+   yarn dev
+   ```
+5. Acesse em:
+   ```
+   http://localhost:3000
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🚀 Diferenciais Técnicos
+- **Compilação Rápida**: Utilização de SWC para uma compilação eficiente.
+- **Design Responsivo**: Interface construída com SCSS e MUI.
+- **Estrutura Modular**: Código organizado em componentes reutilizáveis.
+
+## 🔍 Desafios Técnicos Resolvidos
+- Integração do SWC com Vite para melhoria na velocidade de compilação.
+- Criação de uma interface responsiva e moderna utilizando MUI.
+
+## 📌 Próximos Passos
+- Adicionar mais projetos ao portfólio.
+- Implementar animações e transições.
+- Melhorar a acessibilidade do site.
+
+## 🤝 Contribuições
+Contribuições são bem-vindas! Abra uma issue ou envie um pull request para melhorar o projeto.
+
+## 📜 Licença
+Licenciado sob a MIT License.
+
+Feito por Guilherme Bomfim. 🚀
