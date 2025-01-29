@@ -7,6 +7,8 @@ import StyledButton from "../../../../components/StyledButton/StyledButton";
 import AnimatedBackground from '../../../../components/AnimatedBackground/AnimatedBackground';
 import theme from "../../../../theme";
 
+import Curriculo from "../../../../assets/pdf/curriculo.pdf";
+
 function Hero() {
   const StyledHero = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
@@ -50,13 +52,13 @@ function Hero() {
             <Typography color="secondary" variant="h2" textAlign="center" marginBottom="20px">I'm a FullStack Developer</Typography>
             <Grid container display="flex" justifyContent="center" spacing={2}>
               <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                <StyledButton onClick={() => console.log("Download CV")}>
+                <StyledButton onClick={() => window.open(Curriculo, '_blank')}>
                   <FileDownloadIcon/>
                   <Typography>Download CV</Typography>
                 </StyledButton>
               </Grid>
               <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                <StyledButton onClick={() => console.log("contact")}>
+                <StyledButton onClick={() => window.location.href = 'mailto:guilherme.bomfim98@hotmail.com'}>
                   <EmailIcon/>
                   <Typography>Contact Me</Typography>
                 </StyledButton>
