@@ -69,7 +69,7 @@ function About() {
         [theme.breakpoints.up("xs")]: {
             padding: "1rem",
             marginLeft: "12px",
-            marginRight: "12px",
+            marginRight: "15px",
             fontSize: "10px",
         },
         [theme.breakpoints.up("md")]: {

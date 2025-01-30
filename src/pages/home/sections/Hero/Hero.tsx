@@ -21,19 +21,29 @@ function Hero() {
     [theme.breakpoints.up("md")]: {
       
     },
-    [theme.breakpoints.up("xs")]: {
-      paddingTop: "50px",
+    [theme.breakpoints.up('xs')]: { // <= mobile
+      paddingTop: "100px",
+      height: "110vh",
     },
+    [theme.breakpoints.up('md')]: { // >=mobile
+      paddingTop: "0",
+    }
   }));
 
   const StyledImg = styled("img")(() => ({
-    width: "100%",
+    width: "75%",
     borderRadius: "50%",
     border: "1px solid white",
     position: "relative", 
     zIndex: 1, 
-    [theme.breakpoints.up("md")]: {
-      width: "80%",
+    [theme.breakpoints.down("sm")]: {
+      width: "75%",
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: "300px",
+      marginTop: "60%",
+      alignItems: "center", 
+      marginLeft: "4%"
     },
   }));
 
@@ -44,10 +54,14 @@ function Hero() {
           <Box position="absolute" top={0} left={0} width="100%" height="{50%}" zIndex={-1}>
             <AnimatedBackground />
           </Box>
+
           <Grid container spacing={2}>
             <Grid item xs={12} md={5}>
-              <StyledImg src={Avatar} alt="avatar" />
+              <Box position="relative" textAlign="center">
+                <StyledImg src={Avatar} alt="avatar" />
+              </Box>
             </Grid>
+
             <Grid item xs={12} md={7}>
               <Typography color="secondary" variant="h1" textAlign="center" marginBottom="10px">Guilherme Bomfim</Typography>
               <Typography color="secondary" variant="h2" textAlign="center" marginBottom="20px">I'm a FullStack Developer</Typography>

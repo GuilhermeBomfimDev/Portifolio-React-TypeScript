@@ -19,6 +19,16 @@ const StyledButton: React.FC<StyledButtonProps> = ({children, onClick }) => {
         alignItems: "center",
         justifyContent: "center",
         gap: "10px",
+        [theme.breakpoints.up("md")]: {
+            width: "80%",
+          },
+          [theme.breakpoints.up("sm")]: {
+            width: "80%",
+          },
+          [theme.breakpoints.up("xs")]: {
+            width: "300px",
+            marginRight: "3%",
+          },
         '&:hover': {
             backgroundColor: theme.palette.primary.main,
         }

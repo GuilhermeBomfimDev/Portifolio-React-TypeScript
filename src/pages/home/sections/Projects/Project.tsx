@@ -39,14 +39,13 @@ const StyledSlide = styled("div")<StyledSlideProps>(({ theme, isVisible, directi
     maxWidth: "700px",
     transition: "transform 1.5s ease-in-out, opacity 1.5s ease-in-out",
     opacity: isVisible ? 1 : 0,
-    transform: isVisible ? "translateX(0)" : direction === "left" ? "translateX(-300px)" : "translateX(300px)",
+    transform: isVisible ? "translateX(0)" : direction === "left" ? "translateX(-100px)" : "translateX(100px)",
     [theme.breakpoints.up("md")]: {
         width: "700px",
         maxWidth: "none",
     },
     [theme.breakpoints.down("sm")]: {
         width: "300px",
-        maxWidth: "none",
     },
     "&:hover": {
           backgroundColor: theme.palette.secondary.contrastText,
