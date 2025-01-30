@@ -33,6 +33,7 @@ const StyledSlide = styled("div")<StyledSlideProps>(({ theme, isVisible, directi
     padding: "20px",
     color: "white",
     border: "2px solid white",
+    borderRadius: "10px",
     display: "flex",
     flexDirection: "column",
     width: "85%",
