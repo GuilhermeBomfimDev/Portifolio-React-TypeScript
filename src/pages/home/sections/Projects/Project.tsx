@@ -125,7 +125,7 @@ function Projects() {
             img: Portifolio, 
             details: "Este é meu portifólio pessoal, feito para aprender, aprimorar e aplicar técnicas de Frontend, utilizando tecnologias atuais e eficientes. Esse projeto visa evidenciar práticas de código limpo e organizado, técnicas de layouts responsivos e bom controle de versões utilizando o git.", 
             tech: "TypeScript + SWC, React, JavaScript, HTML, SCSS, Material UI, Vite", 
-            //linkProject: "https://agaidarji.github.io/SisControl/", 
+            linkProject: "https://guilhermebomfimdev.github.io/Portifolio-React-TypeScript/", 
             linkGitHub: "https://github.com/GuilhermeBomfimDev/Portifolio-React-TypeScript", 
             direction: "left" 
         
