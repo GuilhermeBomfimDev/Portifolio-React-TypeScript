@@ -38,37 +38,39 @@ function Hero() {
   }));
 
   return (
-    <StyledHero>
-      <Container maxWidth="lg">
-        <Box position="absolute" top={0} left={0} width="100%" height="{50%}" zIndex={-1}>
-          <AnimatedBackground />
-        </Box>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={5}>
-            <StyledImg src={Avatar} alt="avatar" />
-          </Grid>
-          <Grid item xs={12} md={7}>
-            <Typography color="secondary" variant="h1" textAlign="center" marginBottom="10px">Guilherme Bomfim</Typography>
-            <Typography color="secondary" variant="h2" textAlign="center" marginBottom="20px">I'm a FullStack Developer</Typography>
-            <Grid container display="flex" justifyContent="center" spacing={2}>
-              <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                <StyledButton onClick={() => window.open(Curriculo, '_blank')}>
-                  <FileDownloadIcon/>
-                  <Typography>Download CV</Typography>
-                </StyledButton>
-              </Grid>
-              <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                <StyledButton onClick={() => window.location.href = 'mailto:guilherme.bomfim98@hotmail.com'}>
-                  <EmailIcon/>
-                  <Typography>Contact Me</Typography>
-                </StyledButton>
+    <section id="hero">
+      <StyledHero>
+        <Container maxWidth="lg">
+          <Box position="absolute" top={0} left={0} width="100%" height="{50%}" zIndex={-1}>
+            <AnimatedBackground />
+          </Box>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={5}>
+              <StyledImg src={Avatar} alt="avatar" />
+            </Grid>
+            <Grid item xs={12} md={7}>
+              <Typography color="secondary" variant="h1" textAlign="center" marginBottom="10px">Guilherme Bomfim</Typography>
+              <Typography color="secondary" variant="h2" textAlign="center" marginBottom="20px">I'm a FullStack Developer</Typography>
+              <Grid container display="flex" justifyContent="center" spacing={2}>
+                <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                  <StyledButton onClick={() => window.open(Curriculo, '_blank')}>
+                    <FileDownloadIcon/>
+                    <Typography>Download CV</Typography>
+                  </StyledButton>
+                </Grid>
+                <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                  <StyledButton onClick={() => window.location.href = 'mailto:guilherme.bomfim98@hotmail.com'}>
+                    <EmailIcon/>
+                    <Typography>Contact Me</Typography>
+                  </StyledButton>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
-        </Grid>
-      
-      </Container>
-    </StyledHero>
+        
+        </Container>
+      </StyledHero>
+    </section>
   );
 }
 

@@ -120,69 +120,71 @@ function About() {
     }));
 
     return (
-        <StyledAbout>
-            <Grid2 container spacing={2}>
-                <Typography variant={"h1"} fontWeight={200} marginBottom={"20px"} marginTop={"10px"}>About</Typography>
-            </Grid2>
+        <section id = "about">
+            <StyledAbout>
+                <Grid2 container spacing={2}>
+                    <Typography variant={"h1"} fontWeight={200} marginBottom={"20px"} marginTop={"10px"}>About</Typography>
+                </Grid2>
 
-            <Grid container spacing={3} className="about" display="flex" justifyContent="center" alignItems="center">
-                <Grid item xs={12} md={3} display="flex" justifyContent="center">
-                    <StyledSlide1 className="slide1">
-                        <WorkspacePremiumIcon />
-                        <Typography fontWeight={"bold"}>Experience</Typography>
-                        <Typography>2+ years</Typography>
-                        <Typography>Backend Development</Typography>
-                        <Typography>Fullstack Development</Typography>
-                    </StyledSlide1>
+                <Grid container spacing={3} className="about" display="flex" justifyContent="center" alignItems="center">
+                    <Grid item xs={12} md={3} display="flex" justifyContent="center">
+                        <StyledSlide1 className="slide1">
+                            <WorkspacePremiumIcon />
+                            <Typography fontWeight={"bold"}>Experience</Typography>
+                            <Typography>2+ years</Typography>
+                            <Typography>Backend Development</Typography>
+                            <Typography>Fullstack Development</Typography>
+                        </StyledSlide1>
+                    </Grid>
+
+                    <Grid item display="flex" justifyContent="center" alignItems="center">
+                        <CodeIcon fontSize="large"/>
+                    </Grid>
+
+                    <Grid item xs={12} md={3} display="flex" justifyContent="center">
+                        <StyledSlide2 className="slide2">
+                            <SchoolIcon />
+                            <Typography fontWeight={"bold"}>Education</Typography>
+                            <Typography>Graduação</Typography>
+                            <Typography>Análise e Desenvolvimento de Sistemas </Typography>
+                            <Typography>Professional C# - Udemy</Typography>
+                        </StyledSlide2>
+                    </Grid>
                 </Grid>
 
-                <Grid item display="flex" justifyContent="center" alignItems="center">
-                    <CodeIcon fontSize="large"/>
-                </Grid>
+                <Grid2 container spacing={1}>
+                    <Grid item xs={12} md={6}>
+                        <StyledResume>
+                            <Typography fontSize={"1.1rem"} textAlign={"justify"} style={{ textIndent: "4rem"}}>Meu nome é Guilherme Bomfim, tenho 26 anos, moro no Rio de Janeiro e atualmente estou atuando como desenvolvedor FullStack, com foco em Backend. Estou no penúltimo período da faculdade, cursando Análise e Desenvolvimento de Sistemas pelo SENAC. Meu foco tem sido aprender cada vez mais para melhorar como desenvolvedor Backend ou FullStack voltado para área de desenvovimento web. Mas não me privo apenas a web. Surgindo novas oportunidades, ficaria feliz em explorar outros universos dentro desse campo tão vasto.</Typography>
+                            <br/>
+                            <Typography fontSize={"1.1rem"} textAlign={"justify"} style={{ textIndent: "4rem"}} marginBottom={"20px"}>Acredito num mundo onde a tecnologia é nossa grande aliada e por isso, a busca pelo novo é indispensável.
+                            Há 5 anos venho procurando aprender cada vez mais e conhecer novas tecnologias de modo a poder usar esse conhecimento para impactar de forma positiva a vida das pessoas. Em meu último trabalho, tive o privilégio de participar em projetos de software que empregaram mais de 100 funcionários e foram de ajuda para mais de 3 milhões de pessoas.</Typography>
+                        </StyledResume>
+                    </Grid>
+                </Grid2>
 
-                <Grid item xs={12} md={3} display="flex" justifyContent="center">
-                    <StyledSlide2 className="slide2">
-                        <SchoolIcon />
-                        <Typography fontWeight={"bold"}>Education</Typography>
-                        <Typography>Graduação</Typography>
-                        <Typography>Análise e Desenvolvimento de Sistemas </Typography>
-                        <Typography>Professional C# - Udemy</Typography>
-                    </StyledSlide2>
-                </Grid>
-            </Grid>
+                <Grid2 container spacing={1}>
+                    <Grid item xs={12} md={6}>
+                        <StyledSkillsContainer>
+                            <Typography fontSize={"5rem"} fontWeight={200} display="flex" justifyContent="center">Skills</Typography>
+                        </StyledSkillsContainer>
+                    </Grid>
+                </Grid2>
 
-            <Grid2 container spacing={1}>
-                <Grid item xs={12} md={6}>
-                    <StyledResume>
-                        <Typography fontSize={"1.1rem"} textAlign={"justify"} style={{ textIndent: "4rem"}}>Meu nome é Guilherme Bomfim, tenho 26 anos, moro no Rio de Janeiro e atualmente estou atuando como desenvolvedor FullStack, com foco em Backend. Estou no penúltimo período da faculdade, cursando Análise e Desenvolvimento de Sistemas pelo SENAC. Meu foco tem sido aprender cada vez mais para melhorar como desenvolvedor Backend ou FullStack voltado para área de desenvovimento web. Mas não me privo apenas a web. Surgindo novas oportunidades, ficaria feliz em explorar outros universos dentro desse campo tão vasto.</Typography>
-                        <br/>
-                        <Typography fontSize={"1.1rem"} textAlign={"justify"} style={{ textIndent: "4rem"}} marginBottom={"20px"}>Acredito num mundo onde a tecnologia é nossa grande aliada e por isso, a busca pelo novo é indispensável.
-                        Há 5 anos venho procurando aprender cada vez mais e conhecer novas tecnologias de modo a poder usar esse conhecimento para impactar de forma positiva a vida das pessoas. Em meu último trabalho, tive o privilégio de participar em projetos de software que empregaram mais de 100 funcionários e foram de ajuda para mais de 3 milhões de pessoas.</Typography>
-                    </StyledResume>
-                </Grid>
-            </Grid2>
-
-            <Grid2 container spacing={1}>
-                <Grid item xs={12} md={6}>
+                <Grid2 container spacing={2}>
                     <StyledSkillsContainer>
-                        <Typography fontSize={"5rem"} fontWeight={200} display="flex" justifyContent="center">Skills</Typography>
+                        {[
+                            "C#", ".NET", "Java", "Spring", "SQL Server", "MySQL",
+                            "Javascript", "React", "HTML", "CSS", "Azure", "Git"
+                        ].map((skill, index) => (
+                            <Grid item xs={6} md={2} key={index} display="flex" justifyContent="center">
+                                <StyledSkills>{skill}</StyledSkills>
+                            </Grid>
+                        ))}
                     </StyledSkillsContainer>
-                </Grid>
-            </Grid2>
-
-            <Grid2 container spacing={2}>
-                <StyledSkillsContainer>
-                    {[
-                        "C#", ".NET", "Java", "Spring", "SQL Server", "MySQL",
-                        "Javascript", "React", "HTML", "CSS", "Azure", "Git"
-                    ].map((skill, index) => (
-                        <Grid item xs={6} md={2} key={index} display="flex" justifyContent="center">
-                            <StyledSkills>{skill}</StyledSkills>
-                        </Grid>
-                    ))}
-                </StyledSkillsContainer>
-            </Grid2>
-        </StyledAbout>
+                </Grid2>
+            </StyledAbout>
+        </section>
   );
 }
 
