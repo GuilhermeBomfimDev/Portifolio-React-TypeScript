@@ -155,9 +155,9 @@ function About() {
                 <Grid2 container spacing={1}>
                     <Grid item xs={12} md={6}>
                         <StyledResume>
-                            <Typography fontSize={"1.1rem"} textAlign={"justify"} style={{ textIndent: "4rem"}}>Meu nome é Guilherme Bomfim, tenho 26 anos, moro no Rio de Janeiro e atualmente estou atuando como desenvolvedor FullStack, com foco em Backend. Estou no penúltimo período da faculdade, cursando Análise e Desenvolvimento de Sistemas pelo SENAC. Meu foco tem sido aprender cada vez mais para melhorar como desenvolvedor Backend ou FullStack voltado para área de desenvovimento web. Mas não me privo apenas a web. Surgindo novas oportunidades, ficaria feliz em explorar outros universos dentro desse campo tão vasto.</Typography>
+                            <Typography fontSize={"1.1rem"} textAlign={"justify"}>Meu nome é Guilherme Bomfim, tenho 26 anos e atualmente estou atuando como desenvolvedor FullStack, com foco em Backend. Estou no quarto período da faculdade, fazendo o curso de Análise e Desenvolvimento de Sistemas pelo SENAC. Meu foco tem sido aprender cada vez mais para melhorar como desenvolvedor Backend ou FullStack voltado para área de desenvovimento web. Mas, surgindo novas oportunidades, ficaria feliz em explorar outros universos dentro desse campo tão vasto.</Typography>
                             <br/>
-                            <Typography fontSize={"1.1rem"} textAlign={"justify"} style={{ textIndent: "4rem"}} marginBottom={"20px"}>Acredito num mundo onde a tecnologia é nossa grande aliada e por isso, a busca pelo novo é indispensável.
+                            <Typography fontSize={"1.1rem"} textAlign={"justify"} marginBottom={"20px"}>Acredito num mundo onde a tecnologia é nossa grande aliada e por isso, a busca pelo novo é indispensável.
                             Há 5 anos venho procurando aprender cada vez mais e conhecer novas tecnologias de modo a poder usar esse conhecimento para impactar de forma positiva a vida das pessoas. Em meu último trabalho, tive o privilégio de participar em projetos de software que empregaram mais de 100 funcionários e foram de ajuda para mais de 3 milhões de pessoas.</Typography>
                         </StyledResume>
                     </Grid>
