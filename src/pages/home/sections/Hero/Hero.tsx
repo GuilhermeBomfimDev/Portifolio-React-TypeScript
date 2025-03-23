@@ -7,7 +7,7 @@ import StyledButton from "../../../../components/StyledButton/StyledButton";
 import AnimatedBackground from '../../../../components/AnimatedBackground/AnimatedBackground';
 import theme from "../../../../theme";
 
-import Curriculo from "../../../../assets/pdf/curriculo.pdf";
+import Curriculo from "../../../../assets/pdf/Curriculo - Guilherme Guimarães - 2025.pdf";
 
 function Hero() {
   const StyledHero = styled("div")(({ theme }) => ({
