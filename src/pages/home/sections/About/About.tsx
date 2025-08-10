@@ -159,6 +159,8 @@ function About() {
                             <br/>
                             <Typography fontSize={"1.1rem"} textAlign={"justify"} marginBottom={"20px"}>Acredito num mundo onde a tecnologia é nossa grande aliada e por isso, a busca pelo novo é indispensável.
                             Há 5 anos venho procurando aprender cada vez mais e conhecer novas tecnologias de modo a poder usar esse conhecimento para impactar de forma positiva a vida das pessoas. Em meu último trabalho, tive o privilégio de participar em projetos de software que empregaram mais de 100 funcionários e foram de ajuda para mais de 3 milhões de pessoas.</Typography>
+                            <br/>
+                            <Typography fontSize={"1.1rem"} textAlign={"justify"} marginBottom={"20px"}>Aualmente, atuo na empresa EY (Ernst and Young) como auditor na área de Tech Risk. Na EY, prestamos serviço para grandes empresas dos mais diversos ramos como bancos, companhias de TV e telecomunicações, farmacêuticas, petroleiras, entre outras. Em minha função, realizo a atividade de analisar os sistemas desses clientes e auxiliá-los a manter seguro suas aplicações, seus dados, seus servidores e, consequentemente, manter sua boa reputação no mercado como empresas confiáveis e de valor público.</Typography>
                         </StyledResume>
                     </Grid>
                 </Grid2>
@@ -174,7 +176,7 @@ function About() {
                 <Grid2 container spacing={2}>
                     <StyledSkillsContainer>
                         {[
-                            "C#", ".NET", "Java", "Spring", "SQL Server", "MySQL",
+                            "C#", ".NET", "Python", "Java", "IA", "Spring", "SQL Server", "MySQL",
                             "Javascript", "React", "HTML", "CSS", "Azure", "Git"
                         ].map((skill, index) => (
                             <Grid item xs={6} md={2} key={index} display="flex" justifyContent="center">

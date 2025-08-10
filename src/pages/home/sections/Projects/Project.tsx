@@ -100,8 +100,20 @@ function Projects() {
 
     const slides: { id: string; title?: string; date?: string; img?: string; details?: string; tech?: string; linkProject?: string; linkGitHub?: string; direction: "left" | "right" }[] = [
         { id: "slide1", 
+            title: "Sistema de Vendas - SalesWeb", 
+            date: "Jan 2025 / Jul 2025", 
+            img: SalesWeb, 
+            details: "O SalesWeb é parte de um projeto de estudo, onde fiz um sistema de gestão de vendas desenvolvido em C# utilizando o framework ASP.NET Core MVC. Este projeto se resume em um controle de vendas, onde é possível gerenciar departamentos, vendedores e registros de vendas de forma eficiente. Com esse projeto, consegui aprimorar meu conhecimento com o framework ASP.NET, a construção de APIs eficientes e organizadas. Trabalhei melhor a construção de banco de dados, garantindo uma conexão segura e um bom desempenho.", 
+            tech: "C#, .Net, Entity FrameWork, SQL Server, Postman, HTML, CSS, Bootstrap",
+            linkProject: "https://stranalytics.onrender.com/",  
+            linkGitHub: "https://github.com/GuilhermeBomfimDev/SalesWeb", 
+            direction: "right" 
+        
+        },
+        
+        { id: "slide2", 
             title: "SisControl", 
-            date: "Jul 2024 / Em desenvolvimento", 
+            date: "Jul 2024 / Dez 2025", 
             img: SisControl, 
             details: "SisControl é uma aplicação que desenvolvi para gerenciar o controle de estoque de um galpão de materiais. Esse sistema permite operações como cadastro de itens, verificação de estoque, login de usuários e atualizações no inventário. Fiz esse projeto com o objetivo de garantir o bom controle dos itens guardados como também a sua segurança. Junto disso, garanti que tivesse uma interface intuitiva e fácil de usar tanto para o administrador quanto para usuários que acessam o sistema.", 
             tech: "C#, JavaScript, HTML, CSS, SQL Server, Azure, Postman", 
@@ -111,26 +123,14 @@ function Projects() {
         
         },
 
-        { id: "slide2", 
-            title: "SalesWeb", 
-            date: "Jan 2025 / Jan 2025", 
-            img: SalesWeb, 
-            details: "O SalesWebMVC é parte de um projeto de estudo, onde fiz um sistema de gestão de vendas desenvolvido em C# utilizando o framework ASP.NET Core MVC. Este projeto se resume em um controle de vendas, onde é possível gerenciar departamentos, vendedores e registros de vendas de forma eficiente. Com esse projeto, consegui aprimorar meu conhecimento com o framework ASP.NET, a construção de APIs eficientes e organizadas. Trabalhei melhor a construção de banco de dados, garantindo uma conexão segura e um bom desempenho.", 
-            tech: "C#, .Net, Entity FrameWork, SQL Server, Postman, HTML, CSS, Bootstrap",
-            //linkProject: "https://agaidarji.github.io/SisControl/",  
-            linkGitHub: "https://github.com/GuilhermeBomfimDev/SalesWeb", 
-            direction: "right" 
-        
-        },
-
         { id: "slide3", 
-            title: "Portifólio", 
-            date: "Jan 2025 / Fev 2025", 
+            title: "App de Buscar de CEP", 
+            date: "Agosto 2025 / Agosto 2025", 
             img: Portifolio, 
-            details: "Este é meu portifólio pessoal, feito para aprender, aprimorar e aplicar técnicas de Frontend, utilizando tecnologias atuais e eficientes. Esse projeto visa evidenciar práticas de código limpo e organizado, técnicas de layouts responsivos e bom controle de versões utilizando o git.", 
-            tech: "TypeScript + SWC, React, JavaScript, HTML, SCSS, Material UI, Vite", 
-            linkProject: "https://guilhermebomfimdev.github.io/Portifolio-React-TypeScript/", 
-            linkGitHub: "https://github.com/GuilhermeBomfimDev/Portifolio-React-TypeScript", 
+            details: "Aplicativo de windows desenvolvido em C# e Python, integrado a IA, com o objetivo de buscar o CEP de um endereço utilizando a API do ViaCEP. O aplicativo possui uma interface simples e intuitiva, onde o usuário pode: 1) inserir o CEP desejado e obter informações detalhadas sobre o endereço correspondente, como rua, bairro, cidade e estado ou 2) inserir o endereço e ter uma lista dos CEPs relacionados ao endereço. Este projeto utiliza integração com IA local por meio do GPT4All para tratar o texto do endereço e tranformá-lo em uma URL de busca na API do ViaCEP de forma automazida.", 
+            tech: "C#, Python, API ViaCEP, IA", 
+            //linkProject: "https://guilhermebomfimdev.github.io/Portifolio-React-TypeScript/", 
+            linkGitHub: "https://github.com/GuilhermeBomfimDev/AppBuscaCep", 
             direction: "left" 
         
         },
@@ -172,12 +172,14 @@ function Projects() {
                                 <br></br>
 
                                 <Grid container display="flex" justifyContent="center" alignItems={"center"} spacing={1} padding={"10px"}>
-                                    <Grid xs={12} md={5} display="flex" justifyContent="center" margin={"5px 5px 0 5px"} >
+                                    if (slide.linkProject != "" || slide.linkProject != undefined) {
+                                        <Grid xs={12} md={5} display="flex" justifyContent="center" margin={"5px 5px 0 5px"} >
                                         <StyledButton onClick={() => window.open(slide.linkProject, '_blank')}>
                                             <CodeIcon/>
                                             <Typography>View Project</Typography>
                                         </StyledButton>
                                     </Grid>
+                                    }
                                     <Grid xs={12} md={5} display="flex" justifyContent="center" margin={"5px 5px 0 5px"}>
                                         <StyledButton onClick={() => window.open(slide.linkGitHub, '_blank')}>
                                             <GitHubIcon/>
