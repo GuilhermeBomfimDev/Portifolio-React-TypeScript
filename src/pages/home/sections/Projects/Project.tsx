@@ -9,8 +9,8 @@ import CodeIcon from '@mui/icons-material/Code';
 
 import SisControl from "../../../../assets/images/printSisControl.jpg";
 import Xadrez from "../../../../assets/images/printXadrez.jpg";
-import Portifolio from "../../../../assets/images/printPortifolio.jpg";
 import SalesWeb from "../../../../assets/gifs/gifSalesWeb.gif";
+import PrintAppBuscaCep from "../../../../assets/images/printBuscaCep2.jpg";
 
 const StyledProject = styled("div")(() => ({
     display: "flex",
@@ -107,7 +107,7 @@ function Projects() {
             tech: "C#, .Net, Entity FrameWork, SQL Server, Postman, HTML, CSS, Bootstrap",
             linkProject: "https://stranalytics.onrender.com/",  
             linkGitHub: "https://github.com/GuilhermeBomfimDev/SalesWeb", 
-            direction: "right" 
+            direction: "left" 
         
         },
         
@@ -119,14 +119,14 @@ function Projects() {
             tech: "C#, JavaScript, HTML, CSS, SQL Server, Azure, Postman", 
             linkProject: "https://agaidarji.github.io/SisControl/", 
             linkGitHub: "https://github.com/GuilhermeBomfimDev/SisControl", 
-            direction: "left" 
+            direction: "right" 
         
         },
 
         { id: "slide3", 
             title: "App de Buscar de CEP", 
             date: "Agosto 2025 / Agosto 2025", 
-            img: Portifolio, 
+            img: PrintAppBuscaCep, 
             details: "Aplicativo de windows desenvolvido em C# e Python, integrado a IA, com o objetivo de buscar o CEP de um endereço utilizando a API do ViaCEP. O aplicativo possui uma interface simples e intuitiva, onde o usuário pode: 1) inserir o CEP desejado e obter informações detalhadas sobre o endereço correspondente, como rua, bairro, cidade e estado ou 2) inserir o endereço e ter uma lista dos CEPs relacionados ao endereço. Este projeto utiliza integração com IA local por meio do GPT4All para tratar o texto do endereço e tranformá-lo em uma URL de busca na API do ViaCEP de forma automazida.", 
             tech: "C#, Python, API ViaCEP, IA", 
             //linkProject: "https://guilhermebomfimdev.github.io/Portifolio-React-TypeScript/", 
@@ -139,7 +139,7 @@ function Projects() {
             title: "Xadrez", 
             date: "Dez 2024 / Jan 2025", 
             img: Xadrez, 
-            details: "O Xadrez Console é um jogo de xadrez desenvolvido em C# utilizando conceitos de programação orientada a objetos. Este projeto foi criado a fim de aprender novas técnicas e boas práticas de desenvolvimento, visando aprimorar o conhecimento em desenvolvimento de jogos e lógica de programação.", 
+            details: "O Xadrez Console é um jogo de xadrez desenvolvido em C# utilizando conceitos de programação orientada a objetos. Este projeto foi criado a fim de aprender novas técnicas e boas práticas de desenvolvimento, visando aprimorar o conhecimento em desenvolvimento de jogos e lógica de programação. O jogo apresenta uma interface simples baseada em console, onde os jogadores podem mover as peças utilizando coordenadas. O sistema valida os movimentos de acordo com as regras do xadre. Além disso, o jogo inclui funcionalidades de xeque e xeque-mate, proporcionando um desafio completo.", 
             tech: "C#", 
             //linkProject: "https://agaidarji.github.io/SisControl/", 
             linkGitHub: "https://github.com/GuilhermeBomfimDev/xadrez-console", 
@@ -172,14 +172,13 @@ function Projects() {
                                 <br></br>
 
                                 <Grid container display="flex" justifyContent="center" alignItems={"center"} spacing={1} padding={"10px"}>
-                                    if (slide.linkProject != "" || slide.linkProject != undefined) {
                                         <Grid xs={12} md={5} display="flex" justifyContent="center" margin={"5px 5px 0 5px"} >
                                         <StyledButton onClick={() => window.open(slide.linkProject, '_blank')}>
                                             <CodeIcon/>
                                             <Typography>View Project</Typography>
                                         </StyledButton>
                                     </Grid>
-                                    }
+                                    
                                     <Grid xs={12} md={5} display="flex" justifyContent="center" margin={"5px 5px 0 5px"}>
                                         <StyledButton onClick={() => window.open(slide.linkGitHub, '_blank')}>
                                             <GitHubIcon/>
